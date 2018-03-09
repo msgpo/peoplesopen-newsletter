@@ -55,6 +55,34 @@
     }
 
     /*** Typography ***************************************************/
+    @font-face {
+      font-family:'anaheimregular';
+      src:local("Anaheim");
+      src:url("https://peoplesopen.net/assets/fonts/anaheim-regular-webfont.eot"),url("https://peoplesopen.net/assets/fonts/anaheim-regular-webfont.eot?#iefix") format("embedded-opentype"),url("https://peoplesopen.net/assets/fonts/anaheim-regular-webfont.woff") format("woff"),url("https://peoplesopen.net/assets/fonts/anaheim-regular-webfont.ttf") format("truetype"),url("https://peoplesopen.net/assets/fonts/anaheim-regular-webfont.svg#anaheimregular") format("svg");
+      font-weight:normal;
+      font-style:normal
+    }
+    @font-face {
+      font-family:'dosisbold';
+      src:url("https://peoplesopen.net/assets/fonts/dosis-bold-webfont.eot");
+      src:url("https://peoplesopen.net/assets/fonts/dosis-bold-webfont.eot?#iefix") format("embedded-opentype"),url("https://peoplesopen.net/assets/fonts/dosis-bold-webfont.woff") format("woff"),url("https://peoplesopen.net/assets/fonts/dosis-bold-webfont.ttf") format("truetype"),url("https://peoplesopen.net/assets/fonts/dosis-bold-webfont.svg#dosisbold") format("svg");
+      font-weight:normal;
+      font-style:normal
+    }
+    @font-face {
+      font-family:'dosislight';
+      src:url("https://peoplesopen.net/assets/fonts/dosis-light-webfont.eot");
+      src:url("https://peoplesopen.net/assets/fonts/dosis-light-webfont.eot?#iefix") format("embedded-opentype"),url("https://peoplesopen.net/assets/fonts/dosis-light-webfont.woff") format("woff"),url("https://peoplesopen.net/assets/fonts/dosis-light-webfont.ttf") format("truetype"),url("https://peoplesopen.net/assets/fonts/dosis-light-webfont.svg#dosislight") format("svg");
+      font-weight:normal;
+      font-style:normal
+    }
+    @font-face {
+      font-family:'dosisregular';
+      src:url("https://peoplesopen.net/assets/fonts/dosis-regular-webfont.eot");
+      src:url("https://peoplesopen.net/assets/fonts/dosis-regular-webfont.eot?#iefix") format("embedded-opentype"),url("https://peoplesopen.net/assets/fonts/dosis-regular-webfont.woff") format("woff"),url("https://peoplesopen.net/assets/fonts/dosis-regular-webfont.ttf") format("truetype"),url("https://peoplesopen.net/assets/fonts/dosis-regular-webfont.svg#dosisregular") format("svg");
+      font-weight:normal;
+      font-style:normal
+    }
 
     .pon-body {
       font-family: Anaheim, "DejaVu Sans Condensed", Arial, Helvetica, sans-serif;
@@ -102,12 +130,20 @@
     /*** Header ***************************************************************/
     /*.pon-header {}*/
 
-    .pon-header__logo {
+    .pon-header__logo a,
+    .pon-header__logo a:visited,
+    .pon-header__logo a:hover,
+    .pon-header__logo a:active,
+    .pon-header__logo a:focus {
+      border: 0 none transparent;
+      color: #fafafa;
       font-size: 16px;
+      text-decoration: none;
     }
 
+
     .pon-header__menu td td {
-      font-size: 20px;
+      font-size: 18px;
       padding: 0;
       margin: 0;
       border: 0 none transparent;
@@ -239,7 +275,7 @@
                                       <tr>
                                         <td height="88">
                                           <div>
-                                            <a href="https://peoplesopen.net/"><img alt="PeoplesOpen.net" src="https://github.com/sudomesh/peoplesopen-newsletter/blob/master/images/peoplesopen-newsletter-logo.png?raw=true"></a>
+                                            <a href="https://peoplesopen.net/"><img alt="PeoplesOpen.net" src="https://xgithub.com/sudomesh/peoplesopen-newsletter/blob/master/images/peoplesopen-newsletter-logo.png?raw=true"></a>
                                           </div>
                                         </td>
                                       </tr>
@@ -253,7 +289,7 @@
                             <!-- END OF: Header :: Logo --->
 
                             <!-- Header :: Menu --->
-                            <td width="120">
+                            <td width="100">
                               <table width="100%" cellpadding="1" cellspacing="0" border="0">
                                 <tbody align="right" valign="middle" class="pon-header__menu">
                                 <tr>
